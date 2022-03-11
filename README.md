@@ -10,7 +10,6 @@
 <br></br>
 
 ## 🎬 Rendering
-
 > - You must use the MiniLibX.
 > - Your program must offer the Julia set and the Mandelbrot set.
 > - The mouse wheel zooms in and out, almost infinitely (within the limits of the
@@ -18,11 +17,14 @@ computer).
 > - You must be able to create different Julia sets by passing different parameters to
 the program.
 > - You must use at least a few colors to show the depth of each fractal.
+> - The zoom follows the actual mouse position.
+> - In addition to the zoom: moving the view by pressing the arrows keys.
+> - Make the color range shift.
+> - Code one more different fractal.
 
 <br></br>
 
 ## 🎮 Graphic management
-
 > - Your program has to display the image in a window.
 > - The management of your window must remain smooth (changing to another window, minimizing, and so forth).
 > - Pressing <strong>ESC</strong> or <strong>Clicking on the cross on the window’s frame</strong> must close the window and quit the program in a clean way.
