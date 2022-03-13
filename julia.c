@@ -51,7 +51,7 @@ void	julia(char *av, t_p *p)
 			p->re = (p->i - WIN_SIZE / 2) * (p->zoom / WIN_SIZE) + p->x;
 			p->im = (p->j - WIN_SIZE / 2) * (p->zoom / WIN_SIZE) + p->y;
 			if (p->n < 100)
-				my_putpixel(p, p->i, p->j, iterate_julia(av, p) * 0xff0000);
+				my_putpixel(p, p->i, p->j, iterate_julia(av, p) * 0x000f0f);
 			p->j++;
 		}
 		p->i++;
