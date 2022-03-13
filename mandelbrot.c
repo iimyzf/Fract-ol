@@ -38,7 +38,7 @@ void	mandelbrot(t_p *p)
 			p->re = 0;
 			p->im = 0;
 			if (p->n < 100)
-				my_putpixel(p, p->i, p->j, iterate_mandelbrot(p) * 0xff0000);
+				my_putpixel(p, p->i, p->j, iterate_mandelbrot(p) * 0x000f0f);
 			p->j++;
 		}
 		p->i++;
