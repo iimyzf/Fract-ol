@@ -12,7 +12,7 @@
 
 NAME = fractol
 
-CFLAGS = -Wall -Werror -Wextra -fsanitize=address
+CFLAGS = -Wall -Werror -Wextra
 
 SRCS = mandelbrot.c julia.c burning_ship.c main.c other_funcs.c ft_strcmp.c \
 		ft_strdup.c error_and_exit.c
