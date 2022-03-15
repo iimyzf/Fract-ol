@@ -55,15 +55,16 @@ void	choose_fractale(char *av, t_p *p)
 
 int	main(int ac, char **av)
 {
-	t_p	p;
+	t_p	*p;
 
-	p.zoom = 4.0;
-	create_window(&p);
-	create_image(&p);
+	p = malloc(sizeof(t_p));
+	p->zoom = 4.0;
+	create_window(p);
+	create_image(p);
 	if (ac != 2 || available_fractals(av))
 		error_phrase();
-	choose_fractale(av[1], &p);
-	hooks(&p);
-	mlx_loop(p.ptr);
+	choose_fractale(av[1], p);
+	hooks(p);
+	mlx_loop(p->ptr);
 	return (0);
 }
